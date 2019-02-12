@@ -37,6 +37,10 @@ class Student
     #=>it returns double arrays [[1]]. We want to select just integer. [0][0] = flatten[0]
   end 
   
+  def self.create 
+    
+  end 
+  
   
 end
 
