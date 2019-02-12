@@ -40,4 +40,3 @@ class Student
   
 end
 
-#  with DB[:conn]
