@@ -33,7 +33,8 @@ class Student
     SQL
     DB[:conn].execute(sql, self.name, self.grade )  
     
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students").[0][0]   #=>it returns double arrays [[1]]. We want to select just integer. = flatter[0]
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students").[0][0]  
+    #=>it returns double arrays [[1]]. We want to select just integer. [0][0]= flatter[0]
   end 
   
   
